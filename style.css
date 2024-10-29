@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: beau;
+    src: url(Baskervville_SC/BaskervvilleSC-Regular.ttf);
+}
+
+body{
+    font-family: beau;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+h4{
+    text-transform: capitalize;
+    line-height: 3rem; 
+}
+
+
+.navbar a{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+
+.navbar-nav{
+    gap: 1rem;
+}
+
+.main-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.625rem 1.875rem;
+    font-size: 20px;
+    background: black;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+.main-btn:hover{
+    border: 1px solid black;
+    background: transparent;  
+    color: black;
+}
+
+.w-100-height{
+    height: 90vh;
+    width: 100%;
+}
+
+.carousel-item{
+    min-height: 300px;
+}
+
+.carousel-caption{
+    text-align: left;
+    margin-bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    text-align: left;
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3.2516rem;
+}
+
+.carousel-caption p{
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.carousel-item .carousel-caption input{
+    padding: 0.73rem 1rem;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.home-section .carousel-indicators{
+    bottom: 2rem;
+}
+
+.home-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: black;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+
+}
+
+.home-section .carousel-indicators button.active{
+    opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .carousel-caption h5{
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .carousel-caption p{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+
+.wrapper{
+    margin-top: 10%;
+}
+
+.text-box{
+    margin-top: 25%;
+}
+
+.box{
+    margin-top: -15%;
+}
+
+.service-section{
+    padding: 100px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
